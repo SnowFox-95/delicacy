@@ -8,6 +8,23 @@
   list-style: none;
   text-decoration: none;
   scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
 }
 
-/* Variables *//*# sourceMappingURL=style.css.map */
+/* Variables */
+:root {
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #fff;
+  --light-orange-color: #ff7e00;
+  --text-color: #1a2428;
+  --bg-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: var(--text-color);
+}/*# sourceMappingURL=style.css.map */
