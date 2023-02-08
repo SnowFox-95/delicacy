@@ -1,5 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -11,17 +12,94 @@
   scroll-behavior: smooth;
 }
 /* Variables */
-:root {
-  --green-color: #3cb815;
-  --light-green-color: #c0eb7b;
-  --orange-color: #fff;
-  --light-orange-color: #ff7e00;
-  --text-color: #1a2428;
-  --bg-color: #fff;
-}
+
+$green-color: #3cb815;
+$light-green-color: #c0eb7b;
+$orange-color: #ff7e00;
+$light-orange-color: #f75f1d;
+$text-color: #1a2428;
+$bg-color: #fff;
+
 img {
   width: 100%;
 }
+
 body {
-  color: var(--text-color);
+  color: $text-color;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $bg-color;
+  box-shadow: 0 8px 11px rgb(14 55 54 /15%);
+  padding: 20px 100px;
+  transition: 0.5s;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $text-color;
+  column-gap: 0.5rem;
+}
+
+.logo .bx {
+  font-size: 24px;
+  color: $orange-color;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: $text-color;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover,
+.navbar .home-active {
+  background: $green-color;
+  border-radius: 5rem;
+  color: $bg-color;
+  transition: background 0.5s;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
 }
