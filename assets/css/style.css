@@ -376,4 +376,24 @@ header {
   padding: 4px 18px;
   -webkit-clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
           clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.about {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-text span {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3cb815;
+}
+
+.about-text p {
+  margin: 0.5rem 0 1rem;
 }/*# sourceMappingURL=style.css.map */

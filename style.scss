@@ -332,20 +332,44 @@ header {
 }
 
 .products-container .box .bx-cart-alt:hover {
-  background:$orange-color;
-  transition:  0.2s all linear;
+  background: $orange-color;
+  transition: 0.2s all linear;
 }
 
-.products-container .box .bx-heart{
-position: absolute;top: 1rem;
-right: 1rem;
-font-size: 20px;
-color:$light-orange-color;
+.products-container .box .bx-heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  color: $light-orange-color;
 }
 
-.products-container .box .discount{
-  position: absolute;top: 1rem;
-  left: 0;background:$light-orange-color;color:$bg-color;
+.products-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background: $light-orange-color;
+  color: $bg-color;
   padding: 4px 18px;
   clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.about {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-text span {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $green-color;
+}
+
+.about-text p {
+  margin: 0.5rem 0 1rem;
 }
