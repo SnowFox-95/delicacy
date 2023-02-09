@@ -373,3 +373,64 @@ header {
 .about-text p {
   margin: 0.5rem 0 1rem;
 }
+
+.customers {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customers h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.customers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.customers-container .box {
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+  border-radius: 0.5rem;
+  border-bottom: 7px solid $green-color;
+}
+.customers-container .box:hover {
+  transform: translateY(10px);
+  transition: 0.2s all linear;
+}
+
+.customers-container .box .bx {
+  font-size: 24px;
+  color: $green-color;
+}
+
+.customers-container .box .stars .bx {
+  font-size: 1rem;
+  color: $light-orange-color;
+}
+
+.customers-container .box p {
+  font-size: 0.938rem;
+}
+.review-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+
+.review-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review-profile h3{
+  font-size: 1rem;
+  font-weight: 600;
+}
