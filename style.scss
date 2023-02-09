@@ -430,7 +430,87 @@ header {
   object-position: center;
 }
 
-.review-profile h3{
+.review-profile h3 {
   font-size: 1rem;
   font-weight: 600;
+}
+
+.footer {
+  max-width: 968;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: #fef4ea;
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.social .bx {
+  padding: 10px;
+  background: $bg-color;
+  color: $green-color;
+  border-radius: 5rem;
+  font-size: 20px;
+}
+
+.social .bx:hover {
+  background: $green-color;
+  color: $bg-color;
+  transition: 0.2s all linear;
+}
+
+.footer-box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-box a {
+  color: #868a92;
+  margin-bottom: 1rem;
+}
+.footer-box a:hover {
+  color: $light-orange-color;
+}
+
+.footer-box form {
+  border-bottom: 1px solid $text-color;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.footer-box form input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.footer-box form .bx {
+  font-size: 20px;
+  color: $light-orange-color;
+  cursor: pointer;
+}
+
+.footer-box form .bxs-envelope{
+  color:$green-color;
 }
