@@ -12,6 +12,18 @@
 }
 
 /* Variables */
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #c0eb7b;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background: #3cb815;
+}
+
 section {
   padding: 4.5rem 0 1.5rem;
 }
@@ -548,4 +560,9 @@ header {
 
 .footer-box form .bxs-envelope {
   color: #3cb815;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

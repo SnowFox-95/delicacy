@@ -20,6 +20,16 @@ $light-orange-color: #f75f1d;
 $text-color: #1a2428;
 $bg-color: #fff;
 
+/* Custom ScrollBar */
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background:$light-green-color;
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb{
+  width: 0.5rem;
+  background:$green-color;
+}
 section {
   padding: 4.5rem 0 1.5rem /* !important */;
 }
@@ -511,6 +521,11 @@ header {
   cursor: pointer;
 }
 
-.footer-box form .bxs-envelope{
-  color:$green-color;
+.footer-box form .bxs-envelope {
+  color: $green-color;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
 }
