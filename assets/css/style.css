@@ -27,6 +27,11 @@
 section {
   padding: 4.5rem 0 1.5rem;
 }
+@media (max-width: 991px) {
+  section {
+    padding: 50px 4%;
+  }
+}
 
 img {
   width: 100%;
@@ -50,6 +55,21 @@ header {
   padding: 20px 100px;
   transition: 0.5s;
 }
+@media (max-width: 1080px) {
+  header {
+    padding: 18px 60px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+}
+@media (max-width: 852px) {
+  header {
+    padding: 12px 4%;
+  }
+}
 
 .profile {
   display: flex;
@@ -68,10 +88,21 @@ header {
      object-position: center;
   border-radius: 50%;
 }
+@media (max-width: 370px) {
+  .profile img {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .profile span {
   font-size: 13px;
   font-weight: 500;
+}
+@media (max-width: 370px) {
+  .profile span {
+    font-size: 10px;
+  }
 }
 
 .logo {
@@ -82,6 +113,11 @@ header {
   color: #1a2428;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+@media (max-width: 370px) {
+  .logo {
+    font-size: 1rem;
+  }
 }
 
 .logo .bx {
@@ -94,12 +130,33 @@ header {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
+@media (max-width: 852px) {
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 4px 4px 0 4px rgba(14, 55, 54, 0.15);
+    transition: 0.2s all linear;
+    text-align: left;
+  }
+}
 
 .navbar a {
   font-size: 1rem;
   font-weight: 500;
   color: #1a2428;
   padding: 0.5rem 1rem;
+}
+@media (max-width: 852px) {
+  .navbar a {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+  }
 }
 
 .navbar a:hover,
@@ -109,12 +166,29 @@ header {
   color: #fff;
   transition: background 0.5s;
 }
+@media (max-width: 852px) {
+  .navbar a:hover,
+.navbar .home-active {
+    border-radius: 0.5rem;
+    color: #fff;
+  }
+}
 
+@media (max-width: 852px) {
+  .navbar.active {
+    top: 100%;
+  }
+}
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
   z-index: 10001;
   display: none;
+}
+@media (max-width: 852px) {
+  #menu-icon {
+    display: initial;
+  }
 }
 
 .container {
@@ -136,9 +210,74 @@ header {
   bottom: 200px;
   right: 200px;
 }
-
+@media (max-width: 1080px) {
+  .container img {
+    bottom: 100px;
+    right: 100px;
+  }
+}
+@media (max-width: 852px) {
+  .container img {
+    width: 390px;
+  }
+}
+@media (max-width: 712px) {
+  .container img {
+    right: 20px;
+  }
+}
+@media (max-width: 642px) {
+  .container img {
+    right: 0;
+    bottom: 120px;
+    width: 350px;
+  }
+}
+@media (max-width: 583px) {
+  .container img {
+    width: 325px;
+    bottom: 145px;
+  }
+}
+@media (max-width: 546px) {
+  .container img {
+    right: 0;
+    bottom: -100px;
+    width: 290px;
+    height: 820px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 520px) {
+  .container img {
+    width: 250px;
+    bottom: -70px;
+  }
+}
+@media (max-width: 485px) {
+  .container img {
+    width: 225px;
+    bottom: -50px;
+  }
+}
 .home-text {
   padding: 300px 150px;
+}
+@media (max-width: 1080px) {
+  .home-text {
+    padding: 200px 100px;
+  }
+}
+@media (max-width: 991px) {
+  .home-text {
+    padding: 175px 5%;
+  }
+}
+@media (max-width: 370px) {
+  .home-text {
+    padding-bottom: 17rem;
+  }
 }
 
 .home-text span {
@@ -146,11 +285,31 @@ header {
   text-transform: uppercase;
   color: #3cb815;
 }
+@media (max-width: 370px) {
+  .home-text span {
+    font-size: 0.8rem;
+  }
+}
 
 .home-text h1 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 852px) {
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 370px) {
+  .home-text h1 {
+    font-size: 1.4rem;
+  }
 }
 
 .btn {
@@ -165,6 +324,16 @@ header {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   max-width: 160px;
+}
+@media (max-width: 852px) {
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
+@media (max-width: 712px) {
+  .btn {
+    max-width: 164px;
+  }
 }
 
 .btn .bx {
@@ -188,6 +357,11 @@ header {
   background-position: center;
   margin-right: 20px;
 }
+@media (max-width: 991px) {
+  .swiper-button-next {
+    margin: 0;
+  }
+}
 
 .swiper-button-next:after {
   display: none;
@@ -200,6 +374,11 @@ header {
   background-position: center;
   margin-left: 20px;
 }
+@media (max-width: 991px) {
+  .swiper-button-prev {
+    margin: 0;
+  }
+}
 
 .swiper-button-prev:after {
   display: none;
@@ -210,16 +389,32 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 370px) {
+  .heading {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .heading h1 {
   font-size: 1.6rem;
   font-weight: 600;
+}
+@media (max-width: 712px) {
+  .heading h1 {
+    font-size: 1.2rem;
+  }
 }
 
 .heading span {
   color: #3cb815;
 }
 
+@media (max-width: 370px) {
+  .heading .btn {
+    margin-top: 1rem;
+  }
+}
 .categories {
   max-width: 1370px;
   margin-left: auto;
@@ -231,6 +426,11 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   gap: 1rem;
   margin-top: 2rem;
+}
+@media (max-width: 370px) {
+  .categories-container {
+    gap: 1.5rem;
+  }
 }
 
 .categories-container .box {
@@ -314,6 +514,11 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   gap: 1.5rem;
   margin-top: 2rem;
+}
+@media (max-width: 852px) {
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+  }
 }
 
 .products-container .box {
@@ -399,7 +604,24 @@ header {
   align-items: center;
   gap: 1.5rem;
 }
+@media (max-width: 712px) {
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  }
+}
 
+@media (max-width: 712px) {
+  .about img {
+    order: 2;
+  }
+  .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .about-text span {
   font-weight: 600;
   text-transform: uppercase;
@@ -420,6 +642,11 @@ header {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+}
+@media (max-width: 712px) {
+  .customers h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .customers-container {

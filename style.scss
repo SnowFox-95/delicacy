@@ -21,17 +21,21 @@ $text-color: #1a2428;
 $bg-color: #fff;
 
 /* Custom ScrollBar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.5rem;
-  background:$light-green-color;
+  background: $light-green-color;
   border-radius: 5rem;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 0.5rem;
-  background:$green-color;
+  background: $green-color;
 }
+
 section {
-  padding: 4.5rem 0 1.5rem /* !important */;
+  padding: 4.5rem 0 1.5rem;
+  @media (max-width: 991px) {
+    padding: 50px 4%;
+  }
 }
 
 img {
@@ -55,6 +59,15 @@ header {
   box-shadow: 0 8px 11px rgb(14 55 54 /15%);
   padding: 20px 100px;
   transition: 0.5s;
+  @media (max-width: 1080px) {
+    padding: 18px 60px;
+  }
+  @media (max-width: 991px) {
+    padding: 18px 4%;
+  }
+  @media (max-width: 852px) {
+    padding: 12px 4%;
+  }
 }
 
 .profile {
@@ -70,11 +83,18 @@ header {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  @media (max-width: 370px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .profile span {
   font-size: 13px;
   font-weight: 500;
+  @media (max-width: 370px) {
+    font-size: 10px;
+  }
 }
 
 .logo {
@@ -84,6 +104,9 @@ header {
   font-weight: 600;
   color: $text-color;
   column-gap: 0.5rem;
+  @media (max-width: 370px) {
+    font-size: 1rem;
+  }
 }
 
 .logo .bx {
@@ -94,6 +117,18 @@ header {
 .navbar {
   display: flex;
   column-gap: 0.5rem;
+  @media (max-width: 852px) {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: $bg-color;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+    text-align: left;
+  }
 }
 
 .navbar a {
@@ -101,6 +136,11 @@ header {
   font-weight: 500;
   color: $text-color;
   padding: 0.5rem 1rem;
+  @media (max-width: 852px) {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+  }
 }
 
 .navbar a:hover,
@@ -109,13 +149,24 @@ header {
   border-radius: 5rem;
   color: $bg-color;
   transition: background 0.5s;
+  @media (max-width: 852px) {
+    border-radius: 0.5rem;
+    color: $bg-color;
+  }
 }
-
+@media (max-width: 852px) {
+  .navbar.active {
+    top: 100%;
+  }
+}
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
   z-index: 10001;
   display: none;
+  @media (max-width: 852px) {
+    display: initial;
+  }
 }
 
 .container {
@@ -136,22 +187,79 @@ header {
   position: absolute;
   bottom: 200px;
   right: 200px;
+  @media (max-width: 1080px) {
+    bottom: 100px;
+    right: 100px;
+  }
+  @media (max-width: 852px) {
+    width: 390px;
+  }
+  @media (max-width: 712px) {
+    right: 20px;
+  }
+  @media (max-width: 642px) {
+    right: 0;
+    bottom: 120px;
+    width: 350px;
+  }
+  @media (max-width: 583px) {
+    width: 325px;
+    bottom: 145px;
+  }
+  @media (max-width: 546px) {
+    right: 0;
+    bottom: -100px;
+    width: 290px;
+    height: 820px;
+    object-fit: contain;
+  }
+  @media (max-width: 520px) {
+    width: 250px;
+    bottom: -70px;
+  }
+  @media (max-width: 485px) {
+    width: 225px;
+    bottom: -50px;
+  }
+  @media (max-width: 375px) {
+  }
 }
 
 .home-text {
   padding: 300px 150px;
+  @media (max-width: 1080px) {
+    padding: 200px 100px;
+  }
+  @media (max-width: 991px) {
+    padding: 175px 5%;
+  }
+  @media (max-width: 370px) {
+    padding-bottom: 17rem;
+  }
 }
 
 .home-text span {
   font-weight: 400;
   text-transform: uppercase;
   color: $green-color;
+  @media (max-width: 370px) {
+    font-size: 0.8rem;
+  }
 }
 
 .home-text h1 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 852px) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 1.4rem;
+  }
 }
 
 .btn {
@@ -165,6 +273,12 @@ header {
   justify-content: space-between;
   column-gap: 00.5rem;
   max-width: 160px;
+  @media (max-width: 852px) {
+    padding: 0.6rem 1.2rem;
+  }
+  @media (max-width: 712px) {
+    max-width: 164px;
+  }
 }
 .btn .bx {
   padding: 4px;
@@ -184,6 +298,9 @@ header {
   background-size: 100% auto;
   background-position: center;
   margin-right: 20px;
+  @media (max-width: 991px) {
+    margin: 0;
+  }
 }
 .swiper-button-next:after {
   display: none;
@@ -194,6 +311,9 @@ header {
   background-size: 100% auto;
   background-position: center;
   margin-left: 20px;
+  @media (max-width: 991px) {
+    margin: 0;
+  }
 }
 .swiper-button-prev:after {
   display: none;
@@ -203,13 +323,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 370px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .heading h1 {
   font-size: 1.6rem;
   font-weight: 600;
+  @media (max-width: 712px) {
+    font-size: 1.2rem;
+  }
 }
 .heading span {
   color: $green-color;
+}
+@media (max-width: 370px) {
+  .heading .btn {
+    margin-top: 1rem;
+  }
 }
 .categories {
   max-width: 1370px;
@@ -221,6 +353,9 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   gap: 1rem;
   margin-top: 2rem;
+  @media (max-width: 370px) {
+    gap: 1.5rem;
+  }
 }
 .categories-container .box {
   position: relative;
@@ -292,6 +427,9 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   gap: 1.5rem;
   margin-top: 2rem;
+  @media (max-width: 852px) {
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+  }
 }
 
 .products-container .box {
@@ -372,6 +510,21 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
   align-items: center;
   gap: 1.5rem;
+  @media (max-width: 712px) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  }
+}
+@media (max-width: 712px) {
+  .about img {
+    order: 2;
+  }
+  .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .about-text span {
@@ -394,6 +547,9 @@ header {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+  @media (max-width: 712px) {
+    font-size: 1.2rem;
+  }
 }
 .customers-container {
   display: grid;
